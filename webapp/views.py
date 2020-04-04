@@ -24,3 +24,6 @@ class questionlist(APIView):
         qlist=questions.objects.all()
         serilizer = questionsSerializer(qlist, many=True)
         return Response(serilizer.data)
+
+def home(request):
+    return HttpResponse("<h1>Django Rest Framework Api</h1><br><p>Some Dummy Data here..</p> <br> <a href='/que'>Questions Api</a> <br> <a href='/emp'>Employee Api</a>")
