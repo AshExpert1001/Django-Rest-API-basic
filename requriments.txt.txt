@@ -1,0 +1,4 @@
+Ashish == Ashish
+django == 3.0.0
+resframework == 20.0.2
+django-cors-headers == 3.2.1
